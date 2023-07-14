@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to the oops problems");
             Console.WriteLine("Select the program given below");
-            Console.WriteLine("\n1:Duplicatenumber\n2:FindMaxmin\n3:FirstletterCapital\n4:Pattern");
+            Console.WriteLine("\n1:Duplicatenumber\n2:FindMaxmin\n3:FirstletterCapital\n4:Pattern\n5:Reversestring");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -24,6 +24,10 @@
                     break;
                 case 4:
                     PrintPattern.PatternFunction();
+                    break;
+                case 5:
+                    Reversestring myObj3 = new Reversestring();
+                    myObj3.ReverseStringFunction();
                     break;
             }
         }
