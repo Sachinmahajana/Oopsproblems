@@ -6,13 +6,17 @@
         {
             Console.WriteLine("Welcome to the oops problems");
             Console.WriteLine("Select the program given below");
-            Console.WriteLine("\n1:Pattern\n2:FindmaxminArray\n3:SumofDigits\n4:Reversestringeachword\n5:FindDuplicates");
+            Console.WriteLine("\n1:Duplicatenumber\n2:FindMaxmin");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
                 case 1:
                     Duplicatenumber myObj = new Duplicatenumber();
                     myObj.DuplicateFunction();
+                    break;
+                case 2:
+                    FindMaxmin myObj1 = new FindMaxmin();
+                    myObj1.FindMaxMinFunction();
                     break;
             }
         }
