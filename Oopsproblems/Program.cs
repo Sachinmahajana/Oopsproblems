@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to the oops problems");
             Console.WriteLine("Select the program given below");
-            Console.WriteLine("\n1:Duplicatenumber\n2:FindMaxmin\n3:FirstletterCapital");
+            Console.WriteLine("\n1:Duplicatenumber\n2:FindMaxmin\n3:FirstletterCapital\n4:Pattern");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -21,6 +21,9 @@
                 case 3:
                     FirstletterCapital myObj2 = new FirstletterCapital();
                     myObj2.FirstLetterCapitalFunction();
+                    break;
+                case 4:
+                    PrintPattern.PatternFunction();
                     break;
             }
         }
